@@ -166,71 +166,71 @@ class StringTest < Minitest::Homework
   end
 
   def test_include
-    maybe "".include?("a")
-    maybe "happy".include?("p")
-    maybe "happy".include?("py")
-    maybe "happy".include?("hy")
+    refute "".include?("a")
+    assert "happy".include?("p")
+    assert "happy".include?("py")
+    refute "happy".include?("hy")
   end
 
   def test_start_with
-    maybe "".start_with?("")
-    maybe "hello?".start_with?("?")
-    maybe "hello".start_with?("h")
-    maybe "hello".start_with?("x")
-    maybe "hello".start_with?("hell")
+    assert "".start_with?("")
+    refute "hello?".start_with?("?")
+    assert "hello".start_with?("h")
+    refute "hello".start_with?("x")
+    assert "hello".start_with?("hell")
   end
 
   def test_end_with
-    maybe "".end_with?("")
-    maybe "coffee?".end_with?("?")
-    maybe "coffee".end_with?("e")
-    maybe "coffee".end_with?("x")
-    maybe "coffee".end_with?("fee")
+    assert "".end_with?("")
+    assert "coffee?".end_with?("?")
+    assert "coffee".end_with?("e")
+    refute "coffee".end_with?("x")
+    assert "coffee".end_with?("fee")
   end
 
   def test_index
-    assert_equal __, "purple".index("p")
-    assert_equal __, "purple".index("u")
-    assert_equal __, "purple".index("e")
-    assert_equal __, "purple".index("x")
+    assert_equal 0, "purple".index("p")
+    assert_equal 1, "purple".index("u")
+    assert_equal 5, "purple".index("e")
+    assert_equal nil, "purple".index("x")
   end
 
   def test_square_brackets
-    assert_equal __, "music"[0]
-    assert_equal __, "music"[3]
-    assert_equal __, "music"[-1]
-    assert_equal __, "music"[-2]
-    assert_equal __, "music"[0,2]
-    assert_equal __, "music"[2,2]
-    assert_equal __, "music"[0..2]
-    assert_equal __, "music"[2..2]
-    assert_equal __, "music"[0...2]
+    assert_equal "m", "music"[0]
+    assert_equal "i", "music"[3]
+    assert_equal "c", "music"[-1]
+    assert_equal "i", "music"[-2]
+    assert_equal "mu", "music"[0,2]
+    assert_equal "si", "music"[2,2]
+    assert_equal "mus", "music"[0..2]
+    assert_equal "s", "music"[2..2]
+    assert_equal "mu", "music"[0...2]
   end
 
   def test_square_brackets_equal
     s = "cut"
-    assert_equal __, s
+    assert_equal "cut", s
     s[0] = "y"
-    assert_equal __, s
+    assert_equal "yut", s
     s[-1] = "p"
-    assert_equal __, s
+    assert_equal "yup", s
     s[-1] = "k"
-    assert_equal __, s
+    assert_equal "yuk", s
     s[1] = "a"
-    assert_equal __, s
+    assert_equal "yak", s
   end
 
   def test_interpolation
     s = "world"
-    assert_equal __, "Hello, #{s}!"
+    assert_equal "Hello, world!", "Hello, #{s}!"
   end
 
   def test_format_specification
-    assert_equal __, "" % ""
-    assert_equal __, "Be %s" % "safe"
-    assert_equal __, "(%s) %s-%s" % ["800", "555", "1234"]
-    assert_equal __, "(%2d)" % 45
-    assert_equal __, "(%3d)" % 45
+    assert_equal "", "" % ""
+    assert_equal "Be safe", "Be %s" % "safe"
+    assert_equal "(800) 555-1234", "(%s) %s-%s" % ["800", "555", "1234"]
+    assert_equal "(45)", "(%2d)" % 45
+    assert_equal "( 45)", "(%3d)" % 45
     assert_equal __, "(%5d)" % 45
     assert_equal __, "(%05d)" % 45
     assert_equal __, "%{name} is %{age} years old." % {name: "Harry", age: "38"}
