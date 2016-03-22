@@ -18,8 +18,8 @@ These exercises focus on these two types of operations.
 
 - `leather_chair_test.rb` - x
 - `tire_test.rb` - x
-- `pills_test.rb`
-- `floor_test.rb`
+- `pills_test.rb` -x
+- `floor_test.rb` -x
 - `milk_bottle_test.rb`
 - `person_test.rb`
 - `door_test.rb`
