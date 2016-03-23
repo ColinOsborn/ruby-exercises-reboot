@@ -8,19 +8,19 @@ class FixnumTest < Minitest::Homework
   be_gentle!
 
   def test_add
-    assert_equal __, 6.send(:+, 3)
-    assert_equal __, (7.+ 2)
-    assert_equal __, (8 + 5)
+    assert_equal 9, 6.send(:+, 3)
+    assert_equal 9, (7.+ 2)
+    assert_equal 13, (8 + 5)
   end
 
   def test_subtract
-    assert_equal __, 2.send(:-, 1)
-    assert_equal __, (5.- 8)
-    assert_equal __, (10 - 3)
+    assert_equal 1, 2.send(:-, 1)
+    assert_equal -3, (5.- 8)
+    assert_equal 7, (10 - 3)
   end
 
   def test_divide
-    assert_equal __, 9.send(:/, 3)
+    assert_equal 3, 9.send(:/, 3)
     assert_equal __, (12./ 3)
     assert_equal __, (18 / 6)
     assert_equal __, (18 / 7)
