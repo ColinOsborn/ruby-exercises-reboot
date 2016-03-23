@@ -10,7 +10,6 @@ class RollCallTest < Minitest::Test
   end
 
   def test_longest_of_one
-    skip
     roll_call = RollCall.new
     roll_call << "Oda"
     assert_equal "Oda", roll_call.longest_name
