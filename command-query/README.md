@@ -29,7 +29,7 @@ These exercises focus on these two types of operations.
 - `light_test.rb` - x
 - `baby_test.rb` - x
 - `kid_test.rb` - x
-- `beers_test.rb`
+- `beers_test.rb` - 
 - `teenager_test.rb`
 - `adult_test.rb`
 - `roll_call_test.rb`
