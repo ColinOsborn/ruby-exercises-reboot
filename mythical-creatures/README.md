@@ -9,8 +9,8 @@ A collection of simple exercises to practice Ruby and TDD
 * `dragon_test.rb` - x
 * `hobbit_test.rb`- x
 * `pirate_test.rb` - x
-* `wizard_test.rb`- 
-* `medusa_test.rb`
+* `wizard_test.rb`- x
+* `medusa_test.rb`- 
 * `werewolf_test.rb`
 * `centaur_test.rb`
 

@@ -36,13 +36,18 @@ class WizardTest < Minitest::Test
   end
 
   def test_starts_rested
-    skip
+    wizard = Wizard.new("Mike Dao", bearded: false)
+    assert_equal "Mike Dao", wizard.name
+    wizard.rested?
+    assert wizard.rested?
     # create wizard
     # .rested? returns true
   end
 
   def test_can_cast_spells
-    skip
+    wizard = Wizard.new("Horace", bearded: true)
+    assert_equal "Horace", wizard.name
+    wizard.cast, "MAGIC MISSILE!"
     # create wizard
     # .cast returns "MAGIC MISSILE!"
   end

@@ -4,6 +4,7 @@ class Wizard
   def initialize(name, bearded = true)
     @name = name
     @bearded = bearded
+    @rested = true
   end
 
   def bearded?
@@ -16,5 +17,13 @@ class Wizard
 
   def incantation(says)
     "sudo chown ~/bin"
+  end
+
+  def rested?
+    @rested
+  end
+
+  def cast
+    "MAGIC MISSLE!"
   end
 end
