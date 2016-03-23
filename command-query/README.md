@@ -26,9 +26,9 @@ These exercises focus on these two types of operations.
 - `teeth_test.rb` - x
 - `music_test.rb` - x
 - `drops_test.rb` - x
-- `light_test.rb`
-- `baby_test.rb`
-- `kid_test.rb`
+- `light_test.rb` - x
+- `baby_test.rb` - x
+- `kid_test.rb` - x
 - `beers_test.rb`
 - `teenager_test.rb`
 - `adult_test.rb`
