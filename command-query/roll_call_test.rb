@@ -16,7 +16,6 @@ class RollCallTest < Minitest::Test
   end
 
   def test_longest_of_several
-    skip
     roll_call = RollCall.new
     roll_call << "Ann"
     roll_call << "Alexandra"
