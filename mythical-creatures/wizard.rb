@@ -24,6 +24,6 @@ class Wizard
   end
 
   def cast
-    "MAGIC MISSLE!"
+  
   end
 end
