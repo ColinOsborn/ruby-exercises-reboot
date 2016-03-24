@@ -157,69 +157,69 @@ class MutatingStringTest < Minitest::Homework
   def test_shovel
     s1 = ""
     s2 = s1 << "abc"
-    maybe s1.object_id == s2.object_id
-    assert_equal __, s1
-    assert_equal __, s2
+    assert s1.object_id == s2.object_id
+    assert_equal "abc", s1
+    assert_equal "abc", s2
   end
 
   def test_concat
     s1 = ""
     s2 = s1.concat("abc")
-    maybe s1.object_id == s2.object_id
-    assert_equal __, s1
-    assert_equal __, s2
+    assert s1.object_id == s2.object_id
+    assert_equal "abc", s1
+    assert_equal "abc", s2
   end
 
   def test_plus
     s1 = ""
     s2 = s1 + "abc"
-    maybe s1.object_id == s2.object_id
-    assert_equal __, s1
-    assert_equal __, s2
+    refute s1.object_id == s2.object_id
+    assert_equal "", s1
+    assert_equal "abc", s2
   end
 
   def test_sub_1
     s1 = "kicking"
     s2 = s1.sub('k', 't')
-    maybe s1.object_id == s2.object_id
-    assert_equal __, s1
-    assert_equal __, s2
+    refute s1.object_id == s2.object_id
+    assert_equal "kicking", s1
+    assert_equal "ticking", s2
   end
 
   def test_sub_2
     s1 = "kicking"
     s2 = s1.sub!('k', 't')
-    maybe s1.object_id == s2.object_id
-    assert_equal __, s1
-    assert_equal __, s2
+    assert s1.object_id == s2.object_id
+    assert_equal "ticking", s1
+    assert_equal "ticking", s2
   end
 
   def test_gsub_1
     s1 = "kicking"
     s2 = s1.gsub('k', 't')
-    maybe s1.object_id == s2.object_id
-    assert_equal __, s1
-    assert_equal __, s2
+    refute s1.object_id == s2.object_id
+    assert_equal "kicking", s1
+    assert_equal "ticting", s2
   end
 
   def test_gsub_2
     s1 = "kicking"
     s2 = s1.gsub!('k', 't')
-    maybe s1.object_id == s2.object_id
-    assert_equal __, s1
-    assert_equal __, s2
+    assert s1.object_id == s2.object_id
+    assert_equal "ticting", s1
+    assert_equal "ticting", s2
   end
 
   def test_square_bracket_equal
     s1 = "cut"
-    assert_equal __, s1
+    assert_equal "cut", s1
 
     s2 = s1[-1] = "p"
     s3 = s1[1] = "p"
 
-    assert_equal __, s2
-    assert_equal __, s3
-    assert_equal __, s1
+    assert_equal "p", s2
+    assert_equal "p", s3
+    assert_equal "cpp", s1
   end
 
 end
