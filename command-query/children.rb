@@ -2,7 +2,7 @@ class Children
   attr_reader :name
 
   def initialize
-    @kids = []
+    @kids = {}
   end
 
   def eldest
