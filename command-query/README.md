@@ -43,7 +43,7 @@ These exercises focus on these two types of operations.
 - `cupcake_test.rb`
 - `student_test.rb`
 - `catalogue_test.rb`
-- `wallet_test.rb`
+- `wallet_test.rb` - ?
 - `clearance_test.rb`
 
 ## Go make up more
