@@ -17,9 +17,9 @@ The **[Ruby Exercises](https://github.com/turingschool/ruby-exercises)** reposit
 **Then**, work through these exercises from the repo:
 
 * Core Types - x
-* Command/Query
+* Command/Query -
 * Mythical Creatures - x
-* Objects and Methods
+* Objects and Methods 
 * Comparisons
 * Mutation
 

@@ -31,8 +31,8 @@ These exercises focus on these two types of operations.
 - `kid_test.rb` - x
 - `beers_test.rb` - x
 - `teenager_test.rb`- x
-- `adult_test.rb` -
-- `roll_call_test.rb`
+- `adult_test.rb` - x
+- `roll_call_test.rb`- x
 - `santa_test.rb`
 - `dog_test.rb`
 - `children_test.rb`

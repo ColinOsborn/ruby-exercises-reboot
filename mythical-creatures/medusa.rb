@@ -17,7 +17,7 @@ end
 class Person
   attr_reader :name,
               :stoned
-  # attr_accessor :stoned
+  attr_accessor :stoned
 
   def initialize(name)
     @name = name
@@ -27,6 +27,5 @@ class Person
   def stoned?
     @stoned
   end
-
 
 end
