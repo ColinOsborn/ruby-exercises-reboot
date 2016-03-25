@@ -10,7 +10,6 @@ class StudentTest < Minitest::Test
   end
 
   def test_grade_can_improve
-    skip
     student = Student.new
     student.study
     assert_equal "B", student.grade
