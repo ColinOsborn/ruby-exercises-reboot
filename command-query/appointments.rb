@@ -2,14 +2,14 @@ require 'time'
 class Appointments
 
   def initialize
-    @schedule = []
+    @slots = []
   end
 
   def earliest
-    @schedule
+    @slots.empty?
   end
 
-  def at(time)
+  def at
     @schedule << time
   end
 
