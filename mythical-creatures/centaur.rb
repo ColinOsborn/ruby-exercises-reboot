@@ -5,20 +5,26 @@ class Centaur
   def initialize(name, breed)
     @name = name
     @breed = breed
-    @cranky = false
+    @cranky = 0
     @standing = true
   end
 
   def shoot
+    @cranky += 1
     "Twang!!!"
   end
 
   def run
+    @cranky += 1
     "Clop clop clop clop!!!"
   end
 
   def cranky?
-    @cranky
+    if @cranky == 0
+      return false
+    else
+      return true
+    end
   end
 
   def standing?

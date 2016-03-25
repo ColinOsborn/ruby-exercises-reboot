@@ -40,7 +40,7 @@ These exercises focus on these two types of operations.
 - `appointments_test.rb` -
 - `yak_test.rb` - x
 - `money_test.rb`- x
-- `cupcake_test.rb` - 
+- `cupcake_test.rb` -
 - `student_test.rb`
 - `catalogue_test.rb`- x
 - `wallet_test.rb` - ?
