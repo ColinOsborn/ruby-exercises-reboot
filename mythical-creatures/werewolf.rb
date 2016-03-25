@@ -9,7 +9,11 @@ class Werewolf
   end
 
   def human?
-    @human
+    if @human == 0
+      return true
+    else
+      return false
+    end
   end
 
   def change!
@@ -17,7 +21,7 @@ class Werewolf
   end
 
   def wolf?
-    if @human == false
+    if @human >= 1
       return true
     else
       return false

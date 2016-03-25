@@ -3,6 +3,7 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require_relative 'product'
 require_relative 'catalogue'
+require 'pry'
 
 class CatalogueTest < Minitest::Test
   def test_without_products
@@ -17,7 +18,6 @@ class CatalogueTest < Minitest::Test
   end
 
   def test_cheapest_product
-    skip
     catalogue = Catalogue.new
     catalogue << Product.new("cupcake", 3)
     catalogue << Product.new("shirt", 23)
