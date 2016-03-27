@@ -17,6 +17,7 @@ class ClearanceTest < Minitest::Test
     assert_equal "socks", clearance.best_deal
   end
 
+  
   def test_highest_percent_off_of_many_items
     skip
     clearance = Clearance.new
